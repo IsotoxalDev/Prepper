@@ -1,0 +1,6 @@
+[workspace]
+members = [
+  "prepper_core",
+  "prepper_db",
+  "prepper_ui",
+]

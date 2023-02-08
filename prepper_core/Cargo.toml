@@ -1,0 +1,8 @@
+[package]
+name = "prepper_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.69"
+typenum = "1.16.0"
