@@ -3,4 +3,5 @@ members = [
   "prepper_core",
   "prepper_db",
   "prepper_ui",
+  "prepper_ui/src-tauri"
 ]

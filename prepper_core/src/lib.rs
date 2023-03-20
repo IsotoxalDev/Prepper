@@ -17,6 +17,9 @@ pub struct Question {
 }
 
 impl Question {
+    fn get_prompt(&self) -> String {
+        format!("{}", self.prompt)
+    }
     fn new_mcq(prompt: String, answers: Vec<String>) -> Result<Question> {
         let answer = Answer::MCQ(MCQChoices::new(answers)?);
         Ok(Self { prompt, answer })
@@ -24,5 +27,14 @@ impl Question {
 }
 
 pub fn get_question() -> Question {
-    Question::new_mcq("I am stupid ?".into(), vec!["Yes".into(), "No".into()]).unwrap()
+    Question::new_mcq(
+        "I am stupid ?".into(),
+        vec![
+            "Yes".into(),
+            "No".into(),
+            "Probably".into(),
+            "Probably not".into(),
+        ],
+    )
+    .unwrap()
 }

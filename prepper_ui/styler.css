@@ -1,9 +1,64 @@
 body {
-	/* Color */
-	background: #151515;
-	color: #e5ffd5;
+  background: #151515;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+}
 
-	width: 100%;
-	height: 100%;
-	margin: 0;
+.TopMenu {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.Timer {
+}
+
+.QuestionBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
+
+.QuestionText {
+  text-align: center;
+}
+
+.Answer {
+  margin: 0.5rem;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Integer {
+  text-align: center; 
+  justify-content: flex-start;
+}
+
+.Integer input {
+  font-size: 1.5rem;
+}
+
+.Integer button {
+  font-size: 1.5rem;
+}
+
+.Choice {
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1rem;
+  background: #c5d86d;
+  color: #000;
+  white-space: normal;
+  word-wrap: break-word;
 }
