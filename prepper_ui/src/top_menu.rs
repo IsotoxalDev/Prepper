@@ -8,21 +8,15 @@ pub fn Timer(cx: Scope) -> impl IntoView {
 
     set_interval(update, Duration::from_secs(1));
 
-    view! {
-        cx,
-        <div class="Timer">
-        {time}
-        </div>
-    }
+    view! { cx, <div class="Timer">{time}</div> }
 }
 
 #[component]
 pub fn TopMenu(cx: Scope) -> impl IntoView {
-    view! {
-        cx,
+    view! { cx,
         <div class="TopMenu">
             <button>"back"</button>
-            <Timer />
+            <Timer/>
         </div>
     }
 }

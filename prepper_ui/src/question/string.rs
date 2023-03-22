@@ -15,13 +15,9 @@ pub fn String(cx: Scope, correct: String) -> impl IntoView {
             set_message.update(|x| *x = "Wrong".to_string());
         }
     };
-    view! {
-        cx,
+    view! { cx,
         <form on:submit=submit class="Answer Integer">
-            <input
-            autofocus
-            node_ref=input_ref
-            placeholder="Answer"/>
+            <input autofocus node_ref=input_ref placeholder="Answer"/>
             <button>"submit"</button>
         </form>
         <h1>{message}</h1>

@@ -13,13 +13,13 @@ pub fn Formula(cx: Scope, correct: String) -> impl IntoView {
             set_message.update(|x| *x = "Wrong".to_string());
         }
     };
-    view! {
-        cx,
+    view! { cx,
         <div class="Answer Integer">
             <math-field
                 id="formula"
                 math-virtual-keyboard-policy="auto"
-                on:change=submit></math-field>
+                on:change=submit
+            ></math-field>
         </div>
         <h1>{message}</h1>
     }
