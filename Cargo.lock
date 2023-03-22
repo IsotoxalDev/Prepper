@@ -2502,8 +2502,10 @@ name = "prepper_ui"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "js-sys",
  "leptos",
  "prepper_core",
+ "wasm-bindgen",
  "web-sys",
 ]
 

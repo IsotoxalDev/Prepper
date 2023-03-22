@@ -1,6 +1,6 @@
 mod choices;
 
-use anyhow::{bail, Result};
+use anyhow::Result;
 use choices::{MCQChoices, MSQChoices};
 
 pub enum Answer {
@@ -43,5 +43,5 @@ impl Question {
 }
 
 pub fn get_question() -> Question {
-    Question::new_string("How is apple spelled?".to_string(), "Apple".to_string()).unwrap()
+    Question::new_formula("Write x^2?".to_string(), "x^2".to_string()).unwrap()
 }

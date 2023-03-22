@@ -1,5 +1,6 @@
 use leptos::{html::Input, *};
 
+/// The integer answer set, It takes in the correct value.
 #[component]
 pub fn Integer(cx: Scope, correct: isize) -> impl IntoView {
     let (message, set_message) = create_signal(cx, String::new());

@@ -17,7 +17,6 @@ pub fn Prepper(cx: Scope) -> impl IntoView {
     }
 }
 
-// Easy to use with Trunk (trunkrs.dev) or with a simple wasm-bindgen setup
 pub fn main() {
     mount_to_body(move |cx| view! { cx,  <Prepper/> });
 }

@@ -1,5 +1,6 @@
 use leptos::{html::Input, *};
 
+/// The string answer set. The correct/expected value is passed in
 #[component]
 pub fn String(cx: Scope, correct: String) -> impl IntoView {
     let (message, set_message) = create_signal(cx, String::new());

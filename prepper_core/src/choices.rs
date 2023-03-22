@@ -49,10 +49,7 @@ impl MSQChoices {
         self.choices.clone()
     }
 
-    pub fn correct(&self) -> Vec<String> {
-        self.correct
-            .iter()
-            .map(|idx| format!("{}", self.choices.get(*idx).unwrap()))
-            .collect::<Vec<String>>()
+    pub fn correct(&self) -> Vec<usize> {
+        self.correct.clone()
     }
 }
